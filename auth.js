@@ -25,7 +25,7 @@ function register() {
 
   localStorage.setItem("user", JSON.stringify({ name, email, password }));
   localStorage.setItem("loggedIn", "true");
-  location.href = "chat.html";
+  location.href = "index.html";
 }
 
 function login() {
@@ -41,10 +41,11 @@ function login() {
   }
 
   localStorage.setItem("loggedIn", "true");
-  location.href = "chat.html";
+  location.href = "index.html";
 }
 
 function logout() {
   localStorage.removeItem("loggedIn");
   location.href = "login.html";
 }
+
